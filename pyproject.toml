@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "CLI tool to fetch PubMed papers with non-academic authors"
+authors = ["Alugoju Sriharshini <alugojusriharshini@gmail.com>"]
+packages = [{ include = "pubmed_fetcher", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+biopython = "^1.83"
+pandas = "^2.2.2"
+
+
+
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_fetcher.cli:main"
