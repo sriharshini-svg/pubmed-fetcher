@@ -6,3 +6,15 @@ This tool fetches research papers from PubMed based on a user-supplied query, id
 
 ```bash
 poetry install
+##Tools Used
+This project uses:
+
+Biopython for the PubMed API
+
+pandas for CSV formatting
+
+Poetry for packaging
+
+argparse for CLI
+
+regex for email detection
